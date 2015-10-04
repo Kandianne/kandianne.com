@@ -1,19 +1,29 @@
 html, body, .purple-template, div[ui-view] {
   height: 100%;
   width: 100%;
+  background: -webkit-radial-gradient(#500000, #400000, #200000); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#500000, #400000, #200000); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#500000, #400000, #200000); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#500000, #400000, #200000); /* Standard syntax */
 }
 .main {
   width: 100%;
   display: inline-block;
+  background: none;
 }
+
 @media screen and (min-width: 1000px) {
   .big-text {
-    font-size: 5em
+    font-size: 3em;
+    color: white;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 999px) {
   .big-text {
-    font-size: 10em
+    font-size: 3em;
+    color: white;
+    background: transparent;
+
   }
 }
 #purple {

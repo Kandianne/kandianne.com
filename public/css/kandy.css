@@ -1,23 +1,21 @@
 
 #navigation {
   z-index: 9999;
-  font-size: 1.3em;
+  font-size: 4.3em;
   /*THIS IS FOR GLYPHICON SIZES*/
   height: 100%;
   position: fixed;
   right: 100%;
   top: 0;
-
   color: #200000;
-  background-color: white;
   padding: 0px;
-  box-shadow: 3px 4px 9px white;
+  background-color: #200000;
 }
 #navigation a {
   color: #200000;
   padding-left: 13px;
   padding-right: 13px;
-  width: 130px;
+  width: 90px;
   padding: 0px auto auto auto;
   text-align: center;
 }
@@ -26,30 +24,57 @@
   text-decoration: none;
 }
 .titles {
-  font-size: .7em;
-  padding-left: 19px;
+  font-size: .2em;
+  padding-left: 9px;
+  color: #900000;
+  text-align: center;
 }
 #name {
-  height: 200px;
-  border-bottom: solid thin #200000;
   text-align: center;
-  background-color: #f7d7d7;
-  margin-top: 0px;
-  padding-top: 1.3em;
-}
-.portNames, .contact {
-  border-bottom: solid thin #200000;
-  padding: 19px 6px;
-}
-.contact, .contact2 {
-  height: 19%;
-  padding: 2.7em;
-  text-align: center;
-  margin: auto;
-  background-color: #f7d7d7;
+  padding: 2em auto;
+  color: #700000;
+  font-size: .39em;
+  margin-bottom: 4em;
+  margin-top: 3.9em;
 }
 
-/*---------MEDIA QUERIES-------------------- */
+#name #occ {
+  font-size: .7em;
+}
+#name span {
+  display: block;
+}
+.portNames {
+  padding: 0 6px;
+  text-align: center;
+  margin: 0 auto;
+  display: inherit;
+  height: 13%;
+}
+
+#navigation span {
+  display: block;
+}
+
+
+/*---------State Styles-------------------- */
+.pageHeading {
+  color: #999;
+  text-align: center;
+}
+
+/*---------MD Styles-------------------- */
+.inputs {
+  font-size: 2em;
+  color: #999;
+}
+
+.md-button {
+  color: #999;
+}
+
+
+/*---------MOBILE QUERIES-------------------- */
 
 @media only screen and (max-width: 480px) {
   .titles {
@@ -75,3 +100,5 @@
     display: none;
   }
 }
+
+

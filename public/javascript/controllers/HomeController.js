@@ -1,7 +1,7 @@
 (function() {
   'use strict';
   angular.module('app')
-    .controller('HomeController', HomeController);
+  .controller('HomeController', HomeController);
 
   HomeController.$inject = ['$interval', "$state", "$timeout"];
 
@@ -10,22 +10,13 @@
     vm.type = {
       text: ""
     };
-    vm.rightString = "I mean: Hi, my name is Kareem.";
-    vm.wrongString = "Hey I'm desperate, please hire me."
-    vm.secondMessage = "I just became a MEAN Stack Developer.";
+    vm.rightString = "I'm";
+    vm.wrongString = "Hi"
+    vm.secondMessage = "A"; // Web Developer...Who specializes in MEAN stack applications. Feel free to explore my site and see what I'm all about.";
     vm.secondType = [];
     vm.typingAnimationDone;
     vm.count = 0;
     vm.done = false;
-
-
-
-
-
-
-
-
-
 
 
     // FUNCTION FOR TYPING
