@@ -1,15 +1,32 @@
 {
-	"name": "appname",
-	"version": "0.0.0",
-	"description": "An application for the Coder Camps FullStack JS course",
-	"main": "server.js",
-	"scripts": {
-		"start": "node server.js"
-		},
-		"license": "MIT",
-		"dependencies": {
-			"body-parser": "^1.12.4",
-			"ejs": "^2.3.1",
-			"express": "^4.12.4"
-		}
-	}
+  "name": "kandiannepierrecom",
+  "version": "0.0.0",
+  "description": "An application for the Coder Camps FullStack JS course",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+    },
+    "license": "MIT",
+    "dependencies": {
+      "body-parser": "^1.12.4",
+      "ejs": "^2.3.1",
+      "express": "^4.12.4",
+      "nodemailer": "~0.7.1"
+      },
+      "engines" : {
+        "node": "0.12.7"
+        },
+        "devDependencies": {},
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/Kandianne/newPersonalWebsite.git"
+          },
+          "keywords": [
+          "kandianne"
+          ],
+          "author": "kandianne pierre",
+          "bugs": {
+            "url": "https://github.com/Kandianne/newPersonalWebsite/issues"
+            },
+            "homepage": "https://github.com/Kandianne/newPersonalWebsite#readme"
+          }

@@ -1,0 +1,38 @@
+<div data-ng-controller="ContactFormController as cf">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+
+        <div class="col-md-offset-4 col-lg-offset-4 col-sm-offset-4 col-xs-offset-4 col-lg-6 col-md-6 col-sm-6 col-xs-6 nopadding text-center inputs">
+
+
+          <form name="contactForm" data-ng-submit="cf.sendMail()">
+            <md-input-container flex>
+            <label>How can I help you?...</label>
+            <textarea data-ng-model="cf.contactMessage" required></textarea>
+          </md-input-container>
+
+          <md-input-container flex>
+          <label>Your name...</label>
+          <input data-ng-model="cf.contactName">
+        </md-input-container>
+
+        <md-input-container flex>
+        <label>Your email...</label>
+        <input data-ng-model="cf.contactEmail" required>
+      </md-input-container>
+
+      <md-button class="md-button-ripple msgButton" type="submit">Send Message</md-button>
+
+    </form>
+
+    <br>
+    <p class="text-center">kandipierre@gmail.com</p>
+  </div>
+</div>
+
+
+</div>
+</div>
+</div>

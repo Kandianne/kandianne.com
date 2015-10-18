@@ -1,19 +1,29 @@
 (function() {
 	'use strict';
 	angular.module('app', ['ui.router',"ngAnimate", "ngMaterial"])
-	.config(Config);
+	.config(Config)
+	.config(function($mdThemingProvider) {
+		$mdThemingProvider.theme('default')
+		.primaryPalette('grey',{
+			'default': '100', // by default use shade 400 from the pink palette for primary intentions
+      'hue-1': '100', // use shade 100 for the <code>md-hue-1</code> class
+      'hue-2': '600', // use shade 600 for the <code>md-hue-2</code> class
+      'hue-3': 'A100' // use shade A100 for the <code>md-hue-3</code> class
+  })
+		.accentPalette('grey');
+	});
 	Config.$inject = ['$stateProvider', '$urlRouterProvider'];
 	function Config($stateProvider, $urlRouterProvider) {
-		$stateProvider.state('Education', {
-			templateUrl: 'views/education.html',
+		$stateProvider.state('Links', {
+			templateUrl: 'templates/links.html',
 		}).state('Experience',{
-			templateUrl: 'views/experience.html',
+			templateUrl: 'templates/experience.html',
 		}).state('Skills',{
-			templateUrl: 'views/skills.html',
+			templateUrl: 'templates/skills.html',
 		}).state('Contact',{
-			templateUrl: 'views/contact.html',
+			templateUrl: 'templates/contact.html',
 		}).state('Portfolio',{
-			templateUrl: 'views/portfolio.html',
+			templateUrl: 'templates/portfolio.html',
 		});
 		$urlRouterProvider.otherwise('/');
 	}

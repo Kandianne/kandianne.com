@@ -3,6 +3,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var app = express();
 var port = process.env.PORT || 3000;
+var nodemailer = require("nodemailer");
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -17,6 +18,13 @@ app.set('view options', {
 	layout: false
 });
 
+//=======================DEFINING ROUTE for contactForm========================================
+var contactRoute = require('./routes/contactRoute');
+
+
+// contacting.route('/contactInfo').post(contactRoute.sendMail);
+
+
 //middleware that allows for us to parse JSON and UTF-8 from the body of an HTTP request
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -25,6 +33,11 @@ app.use(bodyParser.json());
 app.get('/', function(req, res) {
 	res.render('index');
 });
+
+
+//=======================saying which route to use========================================
+app.use('/api/contact-form', contactRoute);
+
 
 var server = app.listen(port, function() {
 	var host = server.address().address;

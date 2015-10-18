@@ -4,12 +4,12 @@
 <head>
 	<title>My App</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/angular-material/angular-material.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.0/angular-material.min.css">
 	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" type="text/css" href="/css/kandy.css">
+	<link rel="stylesheet" type="text/css" href="/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="/css/animateState.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
@@ -34,61 +34,54 @@
 
 		</div>
 
-		<div id="navigation" ng-class="{navbaranimate: vm.done}" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+		<div id="navigation" ng-class="{navbaranimate: vm.done}" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 animate FadeIn">
 
-			<div id="name">
-				<span>Kandianne Pierre</span>
-				<span id="occ">Web Developer</span>
-			</div>
+			<div id="navResponse">
+				
+				<md-button class="portNames md-button md-button-ripple" title="Links" ui-sref="Links">
+				<!-- <span style="color:#999;" class="glyphicon glyphicon-envelope"></span> -->
+				<span class="titles">LINKS</span>
+			</md-button>
 
-			<a class="portNames" href="mailto:kandipierre@gmail.com" title="Contact" ui-sref="Contact">
-				<span style="color:#900000;" class="glyphicon glyphicon-envelope"></span>
-				<span class="titles">CONTACT</span>
-			</a>
+			<md-button class="portNames md-button md-button-ripple" title="Contact" ui-sref="Experience">
+			<!-- <span style="color:#999;" class="glyphicon glyphicon-envelope"></span> -->
+			<span class="titles">WORK</span>
+		</md-button>
 
-			<a href="https://www.google.com/?gws_rd=ssl" title="Skills" ui-sref="Skills" class="portNames">
-				<span style="color:#900000;" class="glyphicon glyphicon-signal"></span>
-				<span class="titles">SKILLS</span>
-			</a>
+		<md-button class="portNames md-button md-button-ripple" title="Contact" ui-sref="Contact">
+		<!-- <span style="color:#999;" class="glyphicon glyphicon-envelope"></span> -->
+		<span class="titles">CONTACT</span>
+	</md-button>
+	
 
-			<a class="portNames" title="Experience" ui-sref="Experience">
-				<span style="color:#900000;" class="fa fa-briefcase"></span>
-				<span class="titles">EXPERIENCE</span>
-			</a>
-
-			
-			<a class="portNames" title="Education" ui-sref="Education"><span style="color:#900000;" class="fa fa-graduation-cap"></span><span class="titles">EDUCATION</span>
-			</a>
-
-			<a class="portNames" title="Portfolio" ui-sref="Portfolio">
-				<span style="color:#900000;" class="glyphicon glyphicon-paperclip"></span>
-				<span class="titles">PORTFOLIO</span>
-			</a>
-
-
-
-		</div>
+	<div id="name">
+		<span>Kandianne Pierre</span>
+		<span id="occ">Web Developer</span>
 	</div>
-	<div ui-view></div>
+
+	
+</div>
+
+</div>
+</div>
+<div ui-view></div>
 
 
 
-
-	<!-- Ext Libs -->
-	<script src="angular/angular.min.js"></script>
-	<script src="angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script src="angular-animate/angular-animate.js"></script>
-	<script src="angular-aria/angular-aria.js"></script>
-	<script src="angular-material/angular-material.js"></script>
-	<!-- Global Src -->
-	<script src="/javascript/app.js"></script>
-	<script src="angular-smooth-scroll\angular-smooth-scroll.js"></script>
-	<!-- Factories -->
-	<script src="/javascript/services/HomeFactory.js"></script>
-	<!-- Controllers -->
-	<script src="/javascript/controllers/HomeController.js"></script>
-	<!-- <script src="/javascript/controllers/EducationController.js"></script> -->
-	<!-- <script src="/javascript/controllers/redController.js"></script> -->
+<!-- Ext Libs -->
+<script src="angular/angular.min.js"></script>
+<script src="angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="angular-animate/angular-animate.js"></script>
+<script src="angular-aria/angular-aria.js"></script>
+<script src="angular-material/angular-material.js"></script>
+<!-- Global Src -->
+<script src="/javascript/app.js"></script>
+<script src="angular-smooth-scroll\angular-smooth-scroll.js"></script>
+<!-- Factories -->
+<script src="/javascript/services/HomeFactory.js"></script>
+<!-- Controllers -->
+<script src="/javascript/controllers/HomeController.js"></script>
+<script src="/javascript/controllers/ContactFormController.js"></script>
 </body>
 
 </html>

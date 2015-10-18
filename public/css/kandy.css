@@ -1,4 +1,15 @@
 
+md-input-container label {
+  color: #d3acac;
+  font-weight: normal;
+}
+.msgButton {
+  margin-left: 41%;
+  margin-right: 50%;
+}
+
+
+
 #navigation {
   z-index: 9999;
   font-size: 4.3em;
@@ -7,35 +18,44 @@
   position: fixed;
   right: 100%;
   top: 0;
-  color: #200000;
+  /*color: #200000;*/
   padding: 0px;
-  background-color: #200000;
+  /*background-color: #200000;*/ /* #000963;*/
+  /*box-shadow: inset 0 0 33px #546E7A;*/
+  background: url("../images/darkRedKandi.png") no-repeat center bottom #0D0000;
+  background-size: 100%;
+  /*box-shadow: 1px 2px 3px #333;*/
+}
+
+#navResponse {
+  margin-top: 7%;
+  margin-bottom: 60%;
+  /*margin-bottom: -2em;*/
 }
 #navigation a {
-  color: #200000;
-  padding-left: 13px;
-  padding-right: 13px;
+  color: #d3acac;
   width: 90px;
-  padding: 0px auto auto auto;
+  padding: auto -20% auto 0px;
   text-align: center;
+  margin-top: 10%;
 }
 #navigation a:hover {
   font-weight: bold;
   text-decoration: none;
 }
-.titles {
-  font-size: .2em;
-  padding-left: 9px;
-  color: #900000;
-  text-align: center;
-}
+
 #name {
   text-align: center;
-  padding: 2em auto;
-  color: #700000;
-  font-size: .39em;
-  margin-bottom: 4em;
-  margin-top: 3.9em;
+  color: #fff;
+  font-size: 40%;
+  vertical-align: bottom;
+  margin-bottom: 0;
+  margin-top: 2em;
+  margin-left: 19%;
+  margin-right: auto;
+  padding-top: 90%;
+  bottom: 0;
+  position: absolute;
 }
 
 #name #occ {
@@ -44,16 +64,35 @@
 #name span {
   display: block;
 }
+
+#empty {
+  height: 40%;
+}
 .portNames {
-  padding: 0 6px;
+  /*padding: 7% 0% 0% 0%;*/
   text-align: center;
-  margin: 0 auto;
+  margin-top: 3em;
+  /*margin-bottom: 30%;*/
+  margin-left: 23%; 
   display: inherit;
-  height: 13%;
+  color: #d3acac;
+  font-size: .2em;
 }
 
 #navigation span {
   display: block;
+}
+
+/*-----LINKS PAGE----------------*/
+
+.links i {
+  font-size: 3em;
+  color: #d3acac; 
+  margin: auto;
+}
+
+.linksTwo {
+  padding-top: 13%;
 }
 
 
@@ -64,8 +103,57 @@
 }
 
 /*---------MD Styles-------------------- */
+.links {
+  background-color: #200000;
+  border-radius: 16px; 
+  padding: 1.6em;
+  box-shadow: 1px 1px 3px #333;
+  margin-top: 19%;
+}
+
+.work {
+  background-color: #200000;
+  border-radius: 16px; 
+  padding: 1.6em;
+  box-shadow: 1px 1px 3px #333;
+  margin-top: 7%;
+}
+
+.work h5 {
+  color: #d3acac;
+}
+
+.work p {
+  color: #999;
+  font-style: italic;
+}
+
+.links a {
+  display: inline;
+  margin-left: 2.9em;
+  margin-right: 2.9em;
+}
+
+.links a:hover {
+  text-decoration: none;
+}
+
 .inputs {
-  font-size: 2em;
+  font-size: 1em;
+  text-align: left;
+  margin-top: 13%;
+  margin-bottom: auto;
+  background-color: #200000;
+  border-radius: 16px; 
+  padding: 1.6em;
+  box-shadow: 1px 1px 3px #333;
+}
+
+.inputs p {
+  color: #d3acac;
+}
+
+md-input-container .md-input {
   color: #999;
 }
 
@@ -76,7 +164,7 @@
 
 /*---------MOBILE QUERIES-------------------- */
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
   .titles {
     display: none;
   }
@@ -99,6 +187,6 @@
   #name {
     display: none;
   }
-}
+  }*/
 
 
