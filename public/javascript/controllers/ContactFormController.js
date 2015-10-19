@@ -37,7 +37,7 @@
 			$http.post("/api/contact-form", data).success(function(data, status, headers, config) {
 				$mdToast.show(
 					$mdToast.simple()
-					.content('Thanks for your message ' + data.contactName + ' I will reply to you very soon! ')
+					.content('Thanks for your message ' + data.contactName + '. I will reply to you very soon! ')
 					.position($scope.getToastPosition())
 					.hideDelay(5000)
 					);

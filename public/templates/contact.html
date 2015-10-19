@@ -30,9 +30,67 @@
     <br>
     <p class="text-center">kandipierre@gmail.com</p>
   </div>
+  <!---FOR PHONES ONLY==================================================================================-->
+  <div class="nopadding text-center phoneInputs">
+
+    <form name="contactForm" data-ng-submit="cf.sendMail()">
+      <md-input-container flex>
+      <label>How can I help you?...</label>
+      <textarea data-ng-model="cf.contactMessage" required></textarea>
+    </md-input-container>
+
+    <md-input-container flex>
+    <label>Your name...</label>
+    <input data-ng-model="cf.contactName">
+  </md-input-container>
+
+  <md-input-container flex>
+  <label>Your email...</label>
+  <input data-ng-model="cf.contactEmail" required>
+</md-input-container>
+
+<md-button class="md-button-ripple msgButton" type="submit">Send Message</md-button>
+
+</form>
+
+<br>
+<p class="text-center">kandipierre@gmail.com</p>
+</div>
+
 </div>
 
 
 </div>
+
+
+<div class="row">
+  <div id="phoneNav" ng-class="{navbaranimate: vm.done}" class="animated FadeIn">
+    <br><br>
+    <div id="navResponse">
+
+      <md-button class="portNames md-button md-button-ripple" title="Links" ui-sref="Links">
+      <!-- <span style="color:#999;" class="glyphicon glyphicon-envelope"></span> -->
+      <span class="titles">LINKS</span>
+    </md-button>
+
+    <md-button class="portNames md-button md-button-ripple" title="Contact" ui-sref="Experience">
+    <!-- <span style="color:#999;" class="glyphicon glyphicon-envelope"></span> -->
+    <span class="titles">WORK</span>
+  </md-button>
+
+  <md-button class="portNames md-button md-button-ripple" title="Contact" ui-sref="Contact">
+  <span class="titles">CONTACT</span>
+</md-button>
+
+<div id="name">
+  <span>Kandianne Pierre</span>
+  <span id="occ">Web Developer</span>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 </div>

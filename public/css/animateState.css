@@ -16,7 +16,9 @@ html, body, .purple-template, div[ui-view] {
   margin-top: 300px;
 }
 
-
+#phoneNav {
+  display: none;
+}
 
 @media screen and (min-width: 1000px) {
   .big-text {
@@ -89,3 +91,71 @@ html, body, .purple-template, div[ui-view] {
     /*z-index: -1*/
     animation: state-change 1s reverse;
   }
+
+  .phoneInputs {
+    display: none;
+  }
+
+  /*@media only screen and (max-width: 480px) {
+    .main {
+      margin: auto;
+      color: white;
+      padding: 2em;
+    }
+
+    .big-text {
+      font-size: 1.79em;
+      line-height: 1em;
+      text-align: center;
+    }
+
+    #name {
+      display: none;
+    }
+
+    #phoneNav .md-button {
+      display: inline;
+      bottom: 0;
+    }
+
+    #phoneNav {
+      width: 100%;
+    }
+
+    .portNames {
+      margin-left: 1%;
+      padding:1.6em;
+
+    }
+
+    .inputs {
+      display: none;
+    }
+
+    .phoneInputs {
+      display: normal;
+      width: 93%;
+    }
+
+    .phoneLinks .col-xs-6 {
+      width: 100%;
+    }
+
+    .phoneLinks .col-xs-offset-4 {
+      margin-left: -9%;
+    }
+
+    .links i {
+      line-height: 1.9em;
+      font-size: 3em;
+    }
+
+    .links {
+      padding: 3em;
+    }
+
+    .fa-lightbulb-o:before {
+      content: none;
+    }
+
+  }*/
