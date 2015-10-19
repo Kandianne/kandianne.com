@@ -2,6 +2,7 @@ html, body, .purple-template, div[ui-view] {
   height: 100%;
   width: 100%;
   background: #0D0000;
+  font-family: Verdana,Geneva,sans-serif;
 /*  background: -webkit-radial-gradient(#500000, #400000, #200000); 
   background: -o-radial-gradient(#500000, #400000, #200000); 
   background: -moz-radial-gradient(#500000, #400000, #200000); 
@@ -11,17 +12,21 @@ html, body, .purple-template, div[ui-view] {
   width: 100%;
   display: inline-block;
   background: none;
+  line-height: 2em;
+  margin-top: 300px;
 }
+
+
 
 @media screen and (min-width: 1000px) {
   .big-text {
-    font-size: 3em;
+    font-size: 1.9em;
     color: white;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 999px) {
   .big-text {
-    font-size: 3em;
+    font-size: 1.9em;
     color: white;
     background: transparent;
 
@@ -37,50 +42,50 @@ html, body, .purple-template, div[ui-view] {
   height: 100%;
   width: 100%;
 }
-#secondMessage {
+/*#secondMessage {
   font-weight: bold;
-}
-.mongo {
-  color: brown;
-}
-.express {
-  color: grey;
-}
-.angular {
-  color: red;
-}
-.node {
-  color: green;
-}
+  }*/
+  .mongo {
+    color: brown;
+  }
+  .express {
+    color: grey;
+  }
+  .angular {
+    color: red;
+  }
+  .node {
+    color: green;
+  }
 
-/*ANIMATIONS*/
-@keyframes animate-navbar {
-  from {
-    right: 100%;
+  /*ANIMATIONS*/
+  @keyframes animate-navbar {
+    from {
+      right: 100%;
+    }
+    to{
+      right: 67%;
+    }
   }
-  to{
-    right: 67%;
+  .navbaranimate {
+    animation: animate-navbar .3s ease-in;
+    animation-fill-mode: forwards;
   }
-}
-.navbaranimate {
-  animation: animate-navbar .3s ease-in;
-  animation-fill-mode: forwards;
-}
-@keyframes state-change {
-  from {
-    right: 100%;
+  @keyframes state-change {
+    from {
+      right: 100%;
+    }
+    to {
+      right: 0;
+    }
   }
-  to {
-    right: 0;
+  [ui-view].ng-enter {
+    position: absolute;
+    /*z-index: 200;*/
+    animation: state-change 1.5s ease-in;
   }
-}
-[ui-view].ng-enter {
-  position: absolute;
-  /*z-index: 200;*/
-  animation: state-change 1.5s ease-in;
-}
-[ui-view].ng-leave {
-  position: absolute;
-  /*z-index: -1*/
-  animation: state-change 1s reverse;
-}
+  [ui-view].ng-leave {
+    position: absolute;
+    /*z-index: -1*/
+    animation: state-change 1s reverse;
+  }

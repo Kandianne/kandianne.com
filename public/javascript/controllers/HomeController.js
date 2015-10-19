@@ -10,13 +10,13 @@
     vm.type = {
       text: ""
     };
-    vm.rightString = "I'm";
-    vm.wrongString = "Hi"
-    vm.secondMessage = "A"; // Web Developer...Who specializes in MEAN stack applications. Feel free to explore my site and see what I'm all about.";
-    vm.secondType = [];
-    vm.typingAnimationDone;
-    vm.count = 0;
-    vm.done = false;
+    vm.rightString = "I'm Kandianne Pierre. A dog-loving, creativity driven, marketing-minded, adventurous, web developer who specializes in building MEAN stack applications.";
+    vm.wrongString = "Thanks for visiting!"
+    vm.secondMessage = "Take a look at my work and send me a quick message to say hi :)";
+vm.secondType = [];
+vm.typingAnimationDone;
+vm.count = 0;
+vm.done = false;
 
 
     // FUNCTION FOR TYPING
@@ -30,7 +30,7 @@
 
         stringToBeWorked.splice(stringToBeWorked.length - 1, 1);
         vm.type.text = stringToBeWorked.join("");
-      }, 50)
+      }, 90)
 
     }
     vm.firstType = function(string, backspacefunc) {
@@ -50,7 +50,7 @@
         }
         vm.type.text += string[vm.count];
         vm.count += 1;
-      }, 70);
+      }, 90);
     }
 
     vm.MEANtype = function() {
@@ -60,12 +60,12 @@
           $timeout(function() {
             vm.typingAnimationDone = true;
             vm.done = true;
-            // $state.go("Experience");
+            $state.go("Links");
           }, 500);
         }
         vm.secondType.push(vm.secondMessage[vm.count]);
         vm.count += 1;
-      }, 50)
+      }, 120)
     }
 
 

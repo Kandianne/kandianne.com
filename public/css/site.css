@@ -3,10 +3,18 @@ html, body, .purple-template, div[ui-view] {
   width: 100%;
   margin: 0;
   background-color: #0D0000;
+  font-family: Verdana,Geneva,sans-serif; 
 }
 .main {
   width: 100%;
   display: inline-block;
+  text-align: left;
+  padding-top: 3em;
+}
+
+#spacer {
+  height: 99px;
+  margin-top: 30px;
 }
 @media screen and (min-width: 1000px){
   .big-text {
