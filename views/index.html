@@ -44,8 +44,8 @@
 			<div ng-hide="vm.typingAnimationDone" class="col-md-12">
 				
 				<div class="col-md-4"></div>
-				<div class="col-md-4 customText">
-					<p ng-cloak class="big-text">{{vm.type.text}}</p>
+				<div  ng-cloak class="col-md-4 customText">
+					<p class="big-text">{{vm.type.text}}</p>
 					<div id="secondMessage">
 						<span class="big-text" ng-repeat="letter in vm.secondType track by $index" ng-class="{mongo: letter === 'M', express: letter === 'E', angular: letter === 'A', node: letter === 'N'}">{{letter}}</span>
 					</div>

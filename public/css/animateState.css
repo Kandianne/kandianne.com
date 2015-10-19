@@ -96,7 +96,7 @@ html, body, .purple-template, div[ui-view] {
     display: none;
   }
 
-  /*@media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
     .main {
       margin: auto;
       color: white;
@@ -158,4 +158,4 @@ html, body, .purple-template, div[ui-view] {
       content: none;
     }
 
-  }*/
+  }
