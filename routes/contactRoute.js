@@ -40,7 +40,7 @@ router.post('/', function(req, res){
 	var mailObject = {
 		from: data.contactEmail + " KandiKontact.",
 		// from: 'kandipierre@gmail.com',
-		to: env.EMAIL,
+		to: 'kandiannep@gmail.com',
 		subject: 'Message from ' + data.contactName,
 		html: data.contactMessage + "<br><br>FROM EMAIL ADDRESS: " + data.contactEmail
 	};
