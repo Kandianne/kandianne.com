@@ -1,17 +1,37 @@
 var express = require('express');
 var router = express.Router();
-var env = require('../env.js');
+// var env = require('../env.js');
 var nodemailer = require('nodemailer');
+
+
+
+//------------------------------------------HANDLING ERRORS FOR PASS----------------------------------------------
+function moduleAvailable(name) {
+	try {
+		require.resolve(name);
+		return true;
+	} catch (e) {}
+	return false;
+}
+
+if (moduleAvailable('../env.js')) {
+	var env = require('../env.js');
+} else {
+	var env = {
+		EMAIL_PASS: null,
+		EMAIL: null
+	};
+}
+
 var transporter = nodemailer.createTransport("SMTP", {
 	service: "Gmail",
 	auth: {
-		user: env.EMAIL,
-		pass: env.EMAIL_PASS
+		user: process.env.EMAIL || env.EMAIL,
+		pass: process.env.EMAIL_PASS || env.EMAIL_PASS
 	}
 }) ;
 
-
-
+//------------------------------------------------------------------------------------------------------------------------
 router.post('/', function(req, res){
 	console.log(req.body);
 
