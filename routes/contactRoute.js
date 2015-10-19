@@ -1,11 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var env = require('../env.js');
 var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport("SMTP", {
 	service: "Gmail",
 	auth: {
-		user: "kandipierre@gmail.com",
-		pass: "longlivelearning999"
+		user: env.EMAIL,
+		pass: env.EMAIL_PASS
 	}
 }) ;
 
@@ -19,7 +20,7 @@ router.post('/', function(req, res){
 	var mailObject = {
 		from: data.contactEmail + " KandiKontact.",
 		// from: 'kandipierre@gmail.com',
-		to: 'kandipierre@gmail.com',
+		to: env.EMAIL,
 		subject: 'Message from ' + data.contactName,
 		html: data.contactMessage + "<br><br>FROM EMAIL ADDRESS: " + data.contactEmail
 	};
