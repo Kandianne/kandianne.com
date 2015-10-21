@@ -18,10 +18,12 @@
 			url: '/',
 			templateUrl: 'templates/home.html',
 		}).state('Experience',{
+			url: '/experience',
 			templateUrl: 'templates/experience.html',
 		}).state('Skills',{
 			templateUrl: 'templates/skills.html',
 		}).state('Contact',{
+			url: '/contact',
 			templateUrl: 'templates/contact.html',
 		}).state('Portfolio',{
 			templateUrl: 'templates/portfolio.html',
