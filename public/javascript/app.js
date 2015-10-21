@@ -16,7 +16,7 @@
 	function Config($stateProvider, $urlRouterProvider) {
 		$stateProvider.state('Home', {
 			url: '/',
-			templateUrl: 'templates/home.html',
+			templateUrl: 'templates/Home.html',
 		}).state('Experience',{
 			url: '/experience',
 			templateUrl: 'templates/experience.html',
