@@ -25,11 +25,12 @@ body, html {
 .typingText {
   width: 62%;
   height: 60%;
-  font-size: 2vw;
+  font-size: 1.9vw;
   margin: auto;
   position: fixed;
-  padding-top: 23vh;
-  padding-left: 22vw;
+  padding-top: 27vh;
+  padding-left: 23vw;
+  color: black;
 }
 
 .links {
