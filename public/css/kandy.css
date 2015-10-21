@@ -88,101 +88,117 @@ md-input-container label {
 
 .links i {
   font-size: 3em;
-  color: #d3acac; 
+  color: #d3acac;
   margin: auto;
 }
 
-
-
-/*---------State Styles-------------------- */
-.pageHeading {
-  color: #999;
-  text-align: center;
+.links i:hover {
+  color: #fff;
 }
 
-/*---------MD Styles-------------------- */
-.links {
-  border-radius: 16px; 
-  padding: 1em;
-  /*margin-top: 19%;*/
-}
-
-.work {
+/*.links div:hover {
   background-color: #200000;
-  border-radius: 16px; 
-  padding: 1.6em;
-  box-shadow: 1px 1px 3px #333;
-  margin-top: -9%;
-}
+  }*/
 
-.work h5 {
-  color: #d3acac;
-}
-
-.work p {
-  color: #999;
-  font-style: italic;
-}
-
-.links a {
-  display: inline;
-  margin-left: 2.9em;
-  margin-right: 2.9em;
-}
-
-.links a:hover {
-  text-decoration: none;
-}
-
-.inputs {
-  font-size: 1em;
-  text-align: left;
-  margin-top: -7%;
-  margin-bottom: auto;
-  background-color: #200000;
-  border-radius: 16px; 
-  padding: 1.6em;
-  box-shadow: 1px 1px 3px #333;
-}
-
-.inputs p {
-  color: #d3acac;
-}
-
-md-input-container .md-input {
-  color: #999;
-}
-
-.md-button {
-  color: #999;
-}
-
-
-/*---------MOBILE QUERIES-------------------- */
-
-@media only screen and (max-width: 480px) {
-  .titles {
-    display: none;
+  .links div {
+    padding: 9px 13px;
+    /*background-color: #d3acac;*/
+    display: inline;
+    margin: 2em;
+    box-shadow: inset 0 7px 39px #d3acac;
+    border-radius: 17px;
+    width: 70px;
   }
-  #navigation, .contact {
-    width: 3em;
+
+  /*---------State Styles-------------------- */
+  .pageHeading {
+    color: #999;
+    text-align: center;
   }
-  #navigation a:active {
-    color: #200000;
+
+  /*---------MD Styles-------------------- */
+  .links {
+    border-radius: 16px; 
+    padding: 1em;
+    /*margin-top: 19%;*/
   }
-  .portNames {
-    padding: 2.3em 1.3em 1.76em .2em;
+
+  .work {
+    background-color: #200000;
+    border-radius: 16px; 
+    padding: 1.6em;
+    box-shadow: 1px 1px 3px #333;
+    margin-top: -9%;
   }
-  .contact {
-    padding: 96px 0px 30px 0px;
-    height: 36%;
+
+  .work h5 {
+    color: #d3acac;
   }
-  .contact2 {
-    display: none;
+
+  .work p {
+    color: #999;
+    font-style: italic;
   }
-  #name {
-    display: none;
+
+  .links a {
+    display: inline;
+    margin-left: 2.9em;
+    margin-right: 2.9em;
   }
-}
+
+  .links a:hover {
+    text-decoration: none;
+  }
+
+  .inputs {
+    font-size: 1em;
+    text-align: left;
+    margin-top: -7%;
+    margin-bottom: auto;
+    background-color: #200000;
+    border-radius: 16px; 
+    padding: 1.6em;
+    box-shadow: 1px 1px 3px #333;
+  }
+
+  .inputs p {
+    color: #d3acac;
+  }
+
+  md-input-container .md-input {
+    color: #999;
+  }
+
+  .md-button {
+    color: #999;
+  }
+
+
+  /*---------MOBILE QUERIES-------------------- */
+
+  @media only screen and (max-width: 480px) {
+    .titles {
+      display: none;
+    }
+    #navigation, .contact {
+      width: 3em;
+    }
+    #navigation a:active {
+      color: #200000;
+    }
+    .portNames {
+      padding: 2.3em 1.3em 1.76em .2em;
+    }
+    .contact {
+      padding: 96px 0px 30px 0px;
+      height: 36%;
+    }
+    .contact2 {
+      display: none;
+    }
+    #name {
+      display: none;
+    }
+  }
 
 

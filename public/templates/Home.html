@@ -1,5 +1,13 @@
-What is this page
-What is this page
-What is this page
-What is this page
-What is this page
+<div ng-controller="HomeController as vm" id="homepage" class="container-fluid animated fadeIn">
+	
+	<div class="row typingText">
+		<div class="col-md-12">
+			<p class="big-text">{{vm.type.text}}</p>
+			<div id="secondMessage">
+				<span class="big-text" ng-repeat="letter in vm.secondType track by $index" ng-class="{mongo: letter === 'M', express: letter === 'E', angular: letter === 'md-button', node: letter === 'N'}">{{letter}}</span>
+			</div>
+		</div>
+	</div>
+	
+</div>
+

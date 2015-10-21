@@ -28,64 +28,35 @@
 	
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.11.0/angular-material.min.css">
-	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" type="text/css" href="/css/kandy.css">
-	<link rel="stylesheet" type="text/css" href="/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="/css/animateState.css">
+	<link href='https://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="/css/site.css">
 </head>
 
-<body ng-cloak>
+<body>
 
-	<div class="main container-fluid" ng-controller="HomeController as vm">
-		<div class="row">
+	<div>
+		<div class="col-md-12 text-center nav">
 
-			<div ng-hide="vm.typingAnimationDone" class="col-md-12">
-				
-				<div class="col-md-4"></div>
-				<div  ng-cloak class="col-md-4 customText">
-					<p class="big-text">{{vm.type.text}}</p>
-					<div id="secondMessage">
-						<span class="big-text" ng-repeat="letter in vm.secondType track by $index" ng-class="{mongo: letter === 'M', express: letter === 'E', angular: letter === 'A', node: letter === 'N'}">{{letter}}</span>
-					</div>
-				</div>
-				<div class="col-md-4"></div>
-
-			</div>
-
-		</div>
-
-		<div id="navigation" ng-class="{navbaranimate: vm.done}" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 animate FadeIn">
-			<br><br>
-			<div id="navResponse">
-				
-				<md-button class="portNames md-button md-button-ripple" title="Links" ui-sref="Links">
-				<!-- <span style="color:#999;" class="glyphicon glyphicon-envelope"></span> -->
-				<span class="titles">LINKS</span>
-			</md-button>
-
-			<md-button class="portNames md-button md-button-ripple" title="Contact" ui-sref="Experience">
-			<!-- <span style="color:#999;" class="glyphicon glyphicon-envelope"></span> -->
-			<span class="titles">WORK</span>
+			<md-button class="col-md-4 md-button md-button-ripple"  ui-sref="Home">
+			HOME
 		</md-button>
 
-		<md-button class="portNames md-button md-button-ripple" title="Contact" ui-sref="Contact">
-		<span class="titles">CONTACT</span>
+		<md-button class="col-md-4 md-button md-button-ripple"  ui-sref="Experience">
+		EXPERIENCE
 	</md-button>
-	
 
-	<div id="name">
-		<span>Kandianne Pierre</span>
-		<span id="occ">Web Developer</span>
-	</div>
+	<md-button class="col-md-4 md-button md-button-ripple"  ui-sref="Contact" >
+	CONTACT
+</md-button>
 
-	
 </div>
 
 </div>
-</div>
-<div ui-view></div>
+
+<ui-view></ui-view>
 
 
 

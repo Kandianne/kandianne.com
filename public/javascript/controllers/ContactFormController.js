@@ -47,6 +47,8 @@
                     // called asynchronously if error occurs
                     // or server returns response with an error status.
                 });
+
+			data = null;
 		}
 
 

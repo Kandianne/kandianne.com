@@ -10,7 +10,7 @@
     vm.type = {
       text: ""
     };
-    vm.rightString = "I'm Kandianne Pierre. A dog-loving, creativity driven, marketing-minded, adventurous, web developer who specializes in building MEAN stack applications.";
+    vm.rightString = "I'm Kandianne Pierre. A dog-loving, creativity driven, marketing-minded, adventurous, full-stack web developer.";
     vm.wrongString = "Thanks for visiting!"
     vm.secondMessage = "Take a look at my work and send me a quick message to say hi :)";
 vm.secondType = [];
@@ -18,7 +18,12 @@ vm.typingAnimationDone;
 vm.count = 0;
 vm.done = false;
 
-
+vm.cancel = function() {
+  $interval.cancel("backspaceInterval");
+  $interval.cancel("type");
+  $interval.cancel("secondType");
+  vm.done = true;
+}
     // FUNCTION FOR TYPING
     vm.backspace = function(string, number, funcToRunAfterBackspace) {
       var stringToBeWorked = string.split("");
@@ -60,7 +65,6 @@ vm.done = false;
           $timeout(function() {
             vm.typingAnimationDone = true;
             vm.done = true;
-            $state.go("Links");
           }, 500);
         }
         vm.secondType.push(vm.secondMessage[vm.count]);
