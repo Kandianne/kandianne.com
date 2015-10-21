@@ -15,7 +15,7 @@
 	Config.$inject = ['$stateProvider', '$urlRouterProvider'];
 	function Config($stateProvider, $urlRouterProvider) {
 		$stateProvider.state('Home', {
-			url: '/home',
+			url: '/',
 			templateUrl: 'templates/home.html',
 		}).state('Experience',{
 			url: '/experience',
@@ -30,6 +30,6 @@
 		}).state('Responsive',{
 			templateUrl: 'templates/experience2.html',
 		});
-		$urlRouterProvider.otherwise('/home');
+		$urlRouterProvider.otherwise('/');
 	}
 })();
