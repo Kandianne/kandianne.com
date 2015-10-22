@@ -8,10 +8,12 @@
     ga('send', 'pageview');
 
   </script>
-  <div class="container-fluid col-md-12 experience animated slideInRight">
-    <div class="row">
-      <div class="col-md-12 text-center socialLinks">
 
+  <div class="container-fluid col-md-12 experience">
+
+    <div class="row  animated slideInRight">
+
+      <div class="col-md-12 text-center socialLinks">
 
         <a class="col-md-2 col-md-offset-1" href="https://github.com/Kandianne" target="_blank">
           <div class="fa fa-github  animated pulse infinite"></div>
@@ -33,64 +35,78 @@
       </div>
     </div>
 
-    <div class="row work">
-
-      <div class="col-md-4 text-center">
-
-       <div>
-        <h5 ng-click="detailsOne = !detailsOne;" class="md-button md-button-ripple">MEAN Stack Developer (Current)</h5>
-        <p ng-show="detailsOne" class="animated fadeInDown">Currently utilizing MongoDB, Express.js, Angular.js, JavaScript and Node to build modern web applications. As well as gaining experience with web development frameworks, libraries, and tools including Ionic, Sass, Angular material design, Ionic Material design, Heroku, and Cloudinary.</p>
+    <!-- <div ng-controller="ImageSliderController as image"   class="slider">
+      <div class="row">
+        <div class="col-md-12">
+          <carousel interval="image.myInterval" no-wrap="image.noWrapSlides">
+            <slide ng-repeat="slide in image.slides" active="slide.active">
+              <img ng-src="{{slide.image}}" id="slides">
+            </slide>
+          </carousel>
+        </div>
       </div>
-
-      <div>
-        <h5 ng-click="detailsTwo = !detailsTwo;" class="md-button md-button-ripple">Marketing Materializer</h5>
-        <p ng-show="detailsTwo" class="animated fadeInDown">Freelancing to create custom marketing materials including infographics, web designs, flyers, social-media posts, and more.</p>
-      </div>
-
-      <div>
-        <h5 ng-click="detailsThree = !detailsThree;" class="md-button md-button-ripple">Marketing Manager</h5>
-        <p ng-show="detailsThree" class="animated fadeInDown">Increased sales opportunities through producing company branded marketing materials, made with HTML, CSS, Salesforce, iContact, data.com, Adobe Creative Suite, Powerpoint. Analyzed areas of sales improvement and implemented CRM with constant email campaigns.</p>
-      </div>
-    </div>
-
-    <div class="col-md-4 text-center">
-      <div>
-        <h5 ng-click="detailsFour = !detailsFour;" class="md-button md-button-ripple">Business Development Manager</h5>
-        <p ng-show="detailsFour" class="animated fadeInDown">Provided Hispanic and multicultural sample for market research studies, including the hard to reach Spanishdominant / Unacculturated demographics.</p>
-      </div>
-
-
-      <div>
-        <h5 ng-click="detailsFive = !detailsFive;" class="md-button md-button-ripple">Business English Teacher</h5>
-        <p ng-show="detailsFive" class="animated fadeInDown">Prepared students for business English exams, by encouraging discussion and presenting classes based on students' interests and learning goals.</p>
-      </div>
-
-      <div>
-        <h5 ng-click="detailsSix = !detailsSix;" class="md-button md-button-ripple">Personal Banker</h5>
-        <p ng-show="detailsSix" class="animated fadeInDown">Consulted with individuals to asses financial needs and provide them with the most suitable products and services.</p>
-      </div>
-
-    </div>
-
-    <div class="col-md-4 text-center">
-
-      <div>
-        <h5 ng-click="detailsSeven = !detailsSeven;" class="md-button md-button-ripple">Marketing Manager</h5>
-        <p ng-show="detailsSeven" class="animated fadeInDown">Promoted company and monitored client satisfaction through meetings, follow-up calls, and e-mails.</p>
-      </div>
-
-      <div>
-        <h5 ng-click="detailsEight = !detailsEight;" class="md-button md-button-ripple">English Tutor</h5>
-        <p ng-show="detailsEight" class="animated fadeInDown">Tutored students from ages 8-30 in Math and English.</p>
-      </div>
-
-      <div>
-        <h5 ng-click="detailsNine = !detailsNine;" class="md-button md-button-ripple">Billing Manager</h5>
-        <p ng-show="detailsNine" class="animated fadeInDown">Prepared payment applications, invoices, and budgets for construction management projects.</p>
-      </div>
-
-    </div>
-
+    </div> -->
 
   </div>
+
+  <div class="row work">
+
+    <div class="col-md-4 text-center">
+
+     <div>
+      <h5 ng-click="detailsOne = !detailsOne;" class="md-button md-button-ripple">MEAN Stack Developer (Current)</h5>
+      <p ng-show="detailsOne" class="animated fadeInDown">Currently utilizing MongoDB, Express.js, Angular.js, JavaScript and Node to build modern web applications. As well as gaining experience with web development frameworks, libraries, and tools including Ionic, Sass, Angular material design, Ionic Material design, Heroku, and Cloudinary.</p>
+    </div>
+
+    <div>
+      <h5 ng-click="detailsTwo = !detailsTwo;" class="md-button md-button-ripple">Marketing Materializer</h5>
+      <p ng-show="detailsTwo" class="animated fadeInDown">Freelancing to create custom marketing materials including infographics, web designs, flyers, social-media posts, and more.</p>
+    </div>
+
+    <div>
+      <h5 ng-click="detailsThree = !detailsThree;" class="md-button md-button-ripple">Marketing Manager</h5>
+      <p ng-show="detailsThree" class="animated fadeInDown">Increased sales opportunities through producing company branded marketing materials, made with HTML, CSS, Salesforce, iContact, data.com, Adobe Creative Suite, Powerpoint. Analyzed areas of sales improvement and implemented CRM with constant email campaigns.</p>
+    </div>
+  </div>
+
+  <div class="col-md-4 text-center">
+    <div>
+      <h5 ng-click="detailsFour = !detailsFour;" class="md-button md-button-ripple">Business Development Manager</h5>
+      <p ng-show="detailsFour" class="animated fadeInDown">Provided Hispanic and multicultural sample for market research studies, including the hard to reach Spanishdominant / Unacculturated demographics.</p>
+    </div>
+
+
+    <div>
+      <h5 ng-click="detailsFive = !detailsFive;" class="md-button md-button-ripple">Business English Teacher</h5>
+      <p ng-show="detailsFive" class="animated fadeInDown">Prepared students for business English exams, by encouraging discussion and presenting classes based on students' interests and learning goals.</p>
+    </div>
+
+    <div>
+      <h5 ng-click="detailsSix = !detailsSix;" class="md-button md-button-ripple">Personal Banker</h5>
+      <p ng-show="detailsSix" class="animated fadeInDown">Consulted with individuals to asses financial needs and provide them with the most suitable products and services.</p>
+    </div>
+
+  </div>
+
+  <div class="col-md-4 text-center">
+
+    <div>
+      <h5 ng-click="detailsSeven = !detailsSeven;" class="md-button md-button-ripple">Marketing Manager</h5>
+      <p ng-show="detailsSeven" class="animated fadeInDown">Promoted company and monitored client satisfaction through meetings, follow-up calls, and e-mails.</p>
+    </div>
+
+    <div>
+      <h5 ng-click="detailsEight = !detailsEight;" class="md-button md-button-ripple">English Tutor</h5>
+      <p ng-show="detailsEight" class="animated fadeInDown">Tutored students from ages 8-30 in Math and English.</p>
+    </div>
+
+    <div>
+      <h5 ng-click="detailsNine = !detailsNine;" class="md-button md-button-ripple">Billing Manager</h5>
+      <p ng-show="detailsNine" class="animated fadeInDown">Prepared payment applications, invoices, and budgets for construction management projects.</p>
+    </div>
+
+  </div>
+
+
 </div>
+

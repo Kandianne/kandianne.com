@@ -12,12 +12,7 @@
 
   <div class="row">
 
-    <div class="col-md-4 text-center picture">
-      <img src="../images/kandianne.jpg">
-    </div>
-
-    <div class="col-md-8 contact">
-
+    <div class="col-md-12 contact">
 
       <form name="contactForm" data-ng-submit="cf.sendMail()">
         <md-input-container flex>
@@ -35,12 +30,17 @@
     <input data-ng-model="cf.contactEmail" required>
   </md-input-container>
 
-  <md-button class="md-button-ripple msgButton" type="submit">Send Message</md-button>
-
+  <div class="text-center">
+    <md-button class="md-button-ripple md-stable msgButton" type="submit">Send Message</md-button>
+  </div>
+  <br>
+  <div>
+    <p class="text-center">kandipierre@gmail.com</p>
+  </div>
 </form>
 
-<br>
-<p class="text-center">kandipierre@gmail.com</p>
+
+
 </div>
 
 

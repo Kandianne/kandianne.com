@@ -47,7 +47,7 @@ router.post('/', function(req, res){
 
 	transporter.sendMail(mailObject, function(err, info) {
 		if(err) {console.log(err, "contactRoutes36")}
-			else{console.log('Message sent: ' + info.body)};
+			else{console.log('Message sent: ' + info)};
 	});
 	res.send(data);
 })

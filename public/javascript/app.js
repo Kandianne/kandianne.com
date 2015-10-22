@@ -1,6 +1,6 @@
 (function() {
 	'use strict';
-	angular.module('app', ['ui.router',"ngAnimate", "ngMaterial"])
+	angular.module('app', ['ui.router',"ngAnimate", "ngMaterial", 'ui.bootstrap.carousel',  'ui.bootstrap'])
 	.config(Config)
 	.config(function($mdThemingProvider) {
 		$mdThemingProvider.theme('default')
