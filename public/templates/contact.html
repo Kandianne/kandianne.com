@@ -8,38 +8,39 @@
   ga('send', 'pageview');
 
 </script>
-<div class="container-fluid animated slideInLeft contactKandi" data-ng-controller="ContactFormController as cf">
+<div class="container-fluid animated fadeInDown contactKandi" data-ng-controller="ContactFormController as cf">
 
   <div class="row">
 
     <div class="col-md-12 contact">
 
       <form name="contactForm" data-ng-submit="cf.sendMail()">
-        <md-input-container flex>
+        <md-input-container flex class="animated pulse infinite">
         <label>How can I help you?...</label>
-        <textarea data-ng-model="cf.contactMessage" required></textarea>
+        <textarea   data-ng-model="cf.contactMessage" required></textarea>
       </md-input-container>
 
-      <md-input-container flex>
+      <md-input-container flex class="animated pulse infinite">
       <label>Your name...</label>
       <input data-ng-model="cf.contactName" required>
     </md-input-container>
 
-    <md-input-container flex>
+    <md-input-container flex class="animated pulse infinite">
     <label>Your email...</label>
-    <input data-ng-model="cf.contactEmail" required>
+    <input  data-ng-model="cf.contactEmail" required>
   </md-input-container>
 
-  <div class="text-center">
-    <md-button class="md-button-ripple md-stable msgButton" type="submit">Send Message</md-button>
+  <div class="col-md-12 message text-center">
+    <md-button class="md-button-ripple md-raised md-button msgButton" type="submit">Send Message</md-button>
+    <br>
+    <br>
+    <div>
+      <p class="text-center">kandipierre@gmail.com - 818.470.9438</p>
+    </div>
   </div>
   <br>
-  <div>
-    <p class="text-center">kandipierre@gmail.com</p>
-  </div>
+
 </form>
-
-
 
 </div>
 

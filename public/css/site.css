@@ -3,7 +3,7 @@ body, html {
   width: 100%;
   margin: 0;
   font-family: 'Pontano Sans', sans-serif;
-  color: #607D8B;
+  color: #200000;
 }
 #homepage {
   height: 89%;
@@ -50,25 +50,33 @@ body, html {
 
 .nav {
   width: 100%;
-  background: #607D8B;
-  color: #fff;
+  /*  background: #200000;*/
+  color: #200000;
   padding: auto;
   padding-top: 1%;
   padding-bottom: 1%;
-  font-size: 1.6vw;
+  font-size: 2vw;
+  font-weight: bold;
   position: fixed;
   bottom: 0;
   -webkit-box-shadow: 0 0 13px black;
   -moz-box-shadow: 0 0 13px black;
   box-shadow: 0 0 13px black;
-  z-index: 999;
+  z-index: 9999;
+  background: white;
 }
 
 .nav a {
-  color: white;
+  color: #200000;
   text-decoration: none;
+  z-index: 9999;
+  font-weight: bold;
 }
 
+.exp {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .experience {
   padding-top: 9%;
   padding-bottom: 9%;
@@ -78,7 +86,7 @@ body, html {
 .socialLinks div {
   transition: all 0.5s ease;
   padding: 1em;
-  background: #607D8B;
+  background: #200000;
   font-size: 3em;
   border-radius: 17px;
   color: white;
@@ -100,33 +108,38 @@ body, html {
 }
 
 .contactKandi {
- padding-bottom: 39%;
- padding-top: 6%;
- background: url("../images/kandianne.jpg");
- opacity: 0.6;
+  padding: auto;
+  height: 100%;
 }
 
 .contact form {
-  padding: 3em;
-  width: 77%;
   margin:auto;
+  width: 70%;
   background: white;
-  border-radius: 17px;
-  box-shadow: 1px 2px 3px #000;
+  padding: 3em;
+  height: 50%;
+  border: thin double #200000;
 }
 
-.contact form:hover {
+.contact {
+  padding-top: 9%;
+  padding-bottom: 15%;
+  height: 50%;
+}
+
+/*.contact form:hover {
  transform: rotate(360deg);
  border-radius: 90px;
-}
+ }*/
 
-label {
+ label {
   font-size: 1.6em;
+  font-weight: bold;
+
 }
 
-md-input-container input {
-  color: #000;
-
+md-input-container .md-placeholder, md-input-container label, md-input-container .md-input{
+  color: #200000;
 }
 
 /*.picture img:hover {
@@ -134,14 +147,24 @@ md-input-container input {
 
   }*/
 
-  .msgButton {
-    margin: auto;
+  .message {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin-left: -19%;
   }
+
 
   .md-button {
     margin-left: 0;
     margin-right: 0;
   }
+
+  .msgButton {
+    margin-top: 2.7em;
+    background: white;
+  }
+
 
 
   /*==================IMAGE SLIDER=============================*/
@@ -165,4 +188,93 @@ md-input-container input {
 }
 .carousel-control .glyphicon-chevron-right, .glyphicon-chevron-left:before {
   display: none;
-}*/
+  }*/
+
+  /*==================NEW EXPERIENCE=============================*/
+  a:hover {
+    text-decoration: none;
+  }
+
+  
+  .otherRow {
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  a, a:visited {
+    color: #200000;
+  }
+
+  .experienceRow {
+    height: 50%;
+  }
+  .experienceRow .col-md-4 {
+    border: thin solid #200000;
+    margin-left: 0;
+    margin-right: 0;
+    height: 50%;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 3em;
+    padding-bottom: 13%;
+    padding-top: 10%;
+  }
+  
+  .github:hover {
+    background: url("http://i1.wp.com/blog.osedea.com/wp-content/uploads/2014/03/Screen-Shot-2014-03-16-at-6.53.05-PM.png") center no-repeat;
+    height: 50%;
+    color: white;
+    text-shadow: 1px 2px 3px #000;
+    font-size: 3.7em;
+    transition: background-position 6s;  
+  }
+
+  .linked:hover {
+    background: url("../images/linked.png") center no-repeat;
+    height: 50%;
+    color: white;
+    text-shadow: 1px 2px 3px #000;
+    font-size: 3.7em;
+    transition: background-position 6s;  
+  }
+
+  .think:hover {
+    background: url("http://www.thinknowresearch.com/wp-content/uploads/2014/11/hispanic-tv-bilingual-advertising.jpg") center no-repeat;
+    height: 50%;
+    color: white;
+    text-shadow: 1px 2px 3px #000;
+    font-size: 3.7em;
+    transition: background-position 6s;  
+  }
+
+  .kreations:hover {
+    background: url("../images/kreations.jpg") center no-repeat;
+    height: 50%;
+    color: white;
+    text-shadow: 1px 2px 3px #000;
+    font-size: 3.7em;
+    transition: background-position 6s;  
+  }
+
+  .stress:hover {
+    background: url("http://www.therippleeffectlife.com/Mastering-Your-Life/wp-content/uploads/2011/09/Fotolia_18766741_Subscription_Monthly_XXL_1.jpg") center no-repeat;
+    height: 50%;
+    color: white;
+    text-shadow: 1px 2px 3px #000;
+    font-size: 3.7em;
+    transition: background-position 6s;  
+  }
+  
+  .regi:hover {
+    background: url("http://joeybatista.com/wp-content/uploads/2015/02/nyc-wallpapers-21952-22505-hd-wallpapers.jpg") center no-repeat;
+    height: 50%;
+    color: white;
+    text-shadow: 1px 2px 3px #000;
+    font-size: 3.7em;
+    transition: background-position 6s;   
+  }
+
+  .exp {
+    height: 100%;
+  }
