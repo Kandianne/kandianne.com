@@ -23,20 +23,20 @@ body, html {
 }
 
 #homepage {
-  background: url("../images/kandicomp.jpg") no-repeat fixed center center;
+  background: url("../images/Gkandi.png") no-repeat fixed center center white;
   background-size: cover;
   height: 100%;
 }
 
 .typingText {
   height: 460px;
-  background: rgba(255, 255, 255, 0.86); 
+  background: rgba(255, 255, 255, 0.79); 
   vertical-align: middle;
   font-size: 29px;
   margin: auto;
   margin-left: auto;
   margin-right: auto;
-  padding: 7%;
+  padding: 7.9%;
   color: #200000;
   margin-top: 9%;
   margin-bottom: 13%;
@@ -124,15 +124,16 @@ body, html {
 
 .contact form {
   margin:auto;
-  width: 70%;
+  width: 90%;
   background: white;
   padding: 3em;
   border: thin double #200000;
+  margin-bottom: 79%;
 }
 
 .contact {
   padding-top: 9%;
-  padding-bottom: 15%;
+  padding-bottom: 60%;
   height: 50%;
 }
 
