@@ -23,7 +23,7 @@ body, html {
 }
 
 #homepage {
-  background: url("../images/Gkandi.png") no-repeat fixed center center white;
+  background: url("../images/Kandianne-pierre.png") no-repeat fixed center center white;
   background-size: cover;
   height: 100%;
 }
@@ -162,7 +162,7 @@ md-input-container .md-placeholder, md-input-container label, md-input-container
     height: 100%;
     width: 100%;
     position: fixed;
-    margin-left: -19%;
+    margin-left: -9.7%;
   }
 
 
