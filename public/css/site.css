@@ -5,12 +5,6 @@ body, html {
   font-family: 'Pontano Sans', sans-serif;
   color: #200000;
 }
-#homepage {
-  height: 89%;
-  background: url("../images/comp.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 .container-fluid {
   padding-right: 0px;
@@ -20,17 +14,34 @@ body, html {
 .row {
   margin-right: 0px;
   margin-left: 0px;
+  height: 100%;
+}
+
+.col-md-12 {
+  padding-left: auto;
+  padding-right: auto;
+}
+
+#homepage {
+  background: url("../images/kandicomp.jpg") no-repeat fixed center center;
+  background-size: cover;
+  height: 100%;
+
 }
 
 .typingText {
-  width: 62%;
-  height: 60%;
-  font-size: 2.7vw;
+  height: 460px;
+  background: rgba(255, 255, 255, 0.86); 
+  vertical-align: middle;
+  font-size: 29px;
   margin: auto;
-  position: fixed;
-  padding-top: 17vh;
-  padding-left: 14vw;
-  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7%;
+  color: #200000;
+  margin-top: 9%;
+  margin-bottom: 13%;
+  border: solid thick #200000;
 }
 
 .links {
@@ -117,7 +128,6 @@ body, html {
   width: 70%;
   background: white;
   padding: 3em;
-  height: 50%;
   border: thin double #200000;
 }
 
@@ -278,3 +288,194 @@ md-input-container .md-placeholder, md-input-container label, md-input-container
   .exp {
     height: 100%;
   }
+
+  .welcomeRow .col-md-4 {
+    border: thin solid #200000;
+  }
+
+  .skillRow{
+    padding-bottom: 13%;
+  }
+
+  #skillsQ {
+   padding-bottom: 25%;
+   padding-top: 9%; 
+ }
+
+ /*--------------------------SKILLS--------------------------------------------*/
+
+
+ *{
+  margin: 0;
+  padding: 0;
+}
+
+.skills-bar-container ul {
+  padding-top: 3%;
+  width: 79%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.skills-bar-container li{
+  border: solid thin #200000;
+  position: relative;
+  width: 100%;
+  height: 1.6em;
+  margin-bottom: 17px;
+  list-style: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+
+
+.skills-bar-container label{
+  color: #000;
+  position: relative;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.skills-bar-container .percent{
+  color: #fff;
+  font-size: 14px;
+  float: right;
+}
+
+.progressbar{
+  position:absolute;
+  width:0%;
+  height: 100%;
+  margin-left: -50%;
+/*  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;*/
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+#progress-html{
+  -webkit-animation-name: progress-html;
+  animation-name: progress-html;
+  -webkit-animation-delay: .7s;
+  animation-delay: .7s;
+}
+
+#progress-customer{
+  -webkit-animation-name: progress-customer;
+  animation-name: progress-customer;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+#progress-css{
+  -webkit-animation-name: progress-css;
+  animation-name: progress-css;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+#progress-javascript{
+  -webkit-animation-name: progress-javascript;
+  animation-name: progress-javascript;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+#progress-php{
+  -webkit-animation-name: progress-php;
+  animation-name: progress-php;
+  -webkit-animation-delay: 3.7s;
+  animation-delay: 3.7s;
+}
+
+#progress-angular{
+  -webkit-animation-name: progress-angular;
+  animation-name: progress-angular;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+
+.progressred, .progressblue, .progresspurple, .progressorange, .progressgreen{
+  background-color: #200000;
+  color: white;
+}
+/*.progressblue{ background-color: #1199ff; }
+.progresspurple{ background-color: #9b59b6; }
+.progressorange{ background-color: orange; }
+.progressgreen{ background-color: #27ae60; }*/
+
+@-webkit-keyframes progress-customer{0%{width: 0%;} 100%{ width: 96%;}}
+@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
+@-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+@-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
+@-webkit-keyframes progress-angular{0%{width: 0%;} 100%{ width: 73%;}}
+
+@-moz-keyframes progress-customer{0%{width: 0%;} 100%{ width: 96%;}}
+@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
+@-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+@-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
+@-moz-keyframes progress-angular{0%{width: 0%;} 100%{ width: 73%;}}
+
+@keyframes progress-customer{0%{width: 0%;} 100%{ width: 96%;}}
+@keyframes progress-html{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
+@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 75%;}}
+@keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
+@keyframes progress-angular{0%{width: 0%;} 100%{ width: 73%;}}
+
+
+
+/*=====================================================
+=            Bootstrap 2.3.2 Media Queries            =
+=====================================================*/
+/*@media only screen and (max-width : 1200px) {
+  .welcomeRow div {
+    padding-bottom: 39%;
+    padding-top: 39%;
+
+  }
+}
+
+@media only screen and (max-width : 979px) {
+  .welcomeRow div {
+    padding-bottom: 33%;
+    padding-top: 33%;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+ .welcomeRow div {
+  padding-bottom: 16%;
+  padding-top: 16%;
+}
+}
+
+@media only screen and (max-width : 480px) {
+ .welcomeRow div {
+  padding-bottom: 9%;
+  padding-top: 9%;
+}
+}
+
+@media only screen and (max-width : 320px) {
+
+  }*/
+
+
+
+
+
+

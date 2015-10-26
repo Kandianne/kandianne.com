@@ -7,10 +7,22 @@
 
   function HomeController($interval, $state, $timeout) {
     var vm = this;
+
+
+    //----------------------SKILLS---------------------------------------------------------------------------------------------------------
+
+
+    $timeout(function() {
+      document.getElementById('#css-pourcent');
+    },3500);
+
+    //-----------------------------------------------------------------------------------------------------------------------------------------
+
+
     vm.type = {
       text: ""
     };
-    vm.rightString = "I'm Kandianne Pierre. A dog-loving, creativity driven, marketing-minded, adventurous, full-stack web developer.";
+    vm.rightString = "I'm Kandianne Pierre. A dog-loving, creativity driven, marketing-minded, adventurous, front-end web developer.";
     vm.wrongString = "Thanks for visiting!"
     vm.secondMessage = "Take a look at my work and send me a quick message to say hi :)";
 vm.secondType = [];
@@ -35,7 +47,7 @@ vm.cancel = function() {
 
         stringToBeWorked.splice(stringToBeWorked.length - 1, 1);
         vm.type.text = stringToBeWorked.join("");
-      }, 90)
+      }, 77)
 
     }
     vm.firstType = function(string, backspacefunc) {
@@ -55,7 +67,7 @@ vm.cancel = function() {
         }
         vm.type.text += string[vm.count];
         vm.count += 1;
-      }, 90);
+      }, 77);
     }
 
     vm.MEANtype = function() {

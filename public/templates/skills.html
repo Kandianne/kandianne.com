@@ -1,76 +1,221 @@
-<div class="purple-template">
-  <div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
-          <div class=" col-md-offset-2 col-lg-offset-2 col-sm-offset-2 col-xs-offset-2 col-lg-10 col-md-10 col-sm-10 col-xs-10 nopadding">
-            <div id="experienceBox">
-              <h1 class="pageHeading nopadding">Skills</h1>
-            </div>
-            <div class="workXp job">
-              <div class="workHeading">
-                <a>Something Here</a>
-                <time>07 / 2008 - 07 / 2009</time>
-                <p class="workPosition">job position</p>
-              </div>
-              <div class="jobDuties">
-                <ul>
-                  <li>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. </span>
-                  </li>
-                  <li>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. </span>
-                  </li>
-                  <li>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. </span>
-                  </li>
-                </ul>
-              </div>
-              <hr>
-              <div class="workXp job">
-                <div class="workHeading">
-                  <a>Something Here</a>
-                  <time>07 / 2008 - 07 / 2009</time>
-                  <p class="workPosition">job position</p>
-                </div>
-                <div class="jobDuties">
-                  <ul>
-                    <li>
-                      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. </span>
-                    </li>
-                    <li>
-                      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. </span>
-                    </li>
-                    <li>
-                      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. </span>
-                    </li>
-                  </ul>
-                </div>
-                <hr>
-                <div class="workXp job">
-                  <div class="workHeading">
-                    <a>Something Here</a>
-                    <time>07 / 2008 - 07 / 2009</time>
-                    <p class="workPosition">job position</p>
-                  </div>
-                  <div class="jobDuties">
-                    <ul>
-                      <li>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. </span>
-                      </li>
-                      <li>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. </span>
-                      </li>
-                      <li>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin molestie malesuada. </span>
-                      </li>
-                    </ul>
-                  </div>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+	ga('create', 'UA-69139821-1', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+
+<div ng-controller="HomeController as vm" class="container-fluid animated fadeIn">
+	<div class="text-center row skillRow">
+		<div class="welcomeRow">
+			
+			<div  class=" col-md-12 skills-bar-container">
+				<div class="col-md-6">
+					<ul>
+						<h4>LANGUAGES AND FRAMEWORKS</h4>
+						<br>
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-html">HTML5</span>
+						</li>
+
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-html">Spanish</span>
+						</li>
+
+						
+						<span class="percent" id="css-pourcent"></span>
+						<li>
+							<span class="progressbar progressblue" id="progress-css">CSS3</span>
+						</li>
+
+						
+						<span class="percent" id="javascript-pourcent"></span>
+						<li>
+							<span class="progressbar progresspurple" id="progress-javascript">Javascript / jQuery</span>
+						</li>
+
+						
+						<span class="percent" id="angular-pourcent"></span>
+						<li>
+							<span class="progressbar progressgreen" id="progress-angular">AngularJS</span>
+						</li>
+
+						
+						<span class="percent" id="angular-pourcent"></span>
+						<li>
+							<span class="progressbar progressgreen" id="progress-angular">MongoDB and Mongoose</span>
+						</li>
+
+						<span class="percent" id="angular-pourcent"></span>
+						<li>
+							<span class="progressbar progressgreen" id="progress-angular">Material Design Lite and Angular Material</span>
+						</li>
+
+						<span class="percent" id="angular-pourcent"></span>
+						<li>
+							<span class="progressbar progressgreen" id="progress-angular">Bootstrap</span>
+						</li>
+						
+						<span class="percent" id="php-pourcent"></span>
+						<li>
+							<span class="progressbar progressorange" id="progress-php">Node.js and Express</span>
+						</li>
+
+						<span class="percent" id="php-pourcent"></span>
+						<li>
+							<span class="progressbar progressorange" id="progress-php">Ionic and Ionic Material Design</span>
+						</li>
+
+					</ul>
+					<ul>
+						<h4>TOOLS</h4>
+						<br>
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-html">Photoshop</span>
+						</li>
+
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-html">Social Media Platforms</span>
+						</li>
+
+						
+						<span class="percent" id="css-pourcent"></span>
+						<li>
+							<span class="progressbar progressblue" id="progress-css">Git and GitHub</span>
+						</li>
+
+						<span class="percent" id="css-pourcent"></span>
+						<li>
+							<span class="progressbar progressblue" id="progress-css">NPM (Node Package Manager)</span>
+						</li>
+
+						
+						<span class="percent" id="css-pourcent"></span>
+						<li>
+							<span class="progressbar progressblue" id="progress-css">Salesforce and iContact</span>
+						</li>
+
+						<span class="percent" id="javascript-pourcent"></span>
+						<li>
+							<span class="progressbar progresspurple" id="progress-javascript">Agile Development</span>
+						</li>
+
+						
+						<span class="percent" id="angular-pourcent"></span>
+						<li>
+							<span class="progressbar progressgreen" id="progress-angular">Heroku</span>
+						</li>
+
+						
+						<span class="percent" id="php-pourcent"></span>
+						<li>
+							<span class="progressbar progressorange" id="progress-php">Cloudinary</span>
+						</li>
+
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul>
+						<h4>PROFESSIONAL AND SOCIAL</h4>
+						<br>
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-customer">Making the customer happy</span>
+						</li>
+
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-html">Cross-cultural Communication</span>
+						</li>
+
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-html">Follow-up Meetings</span>
+						</li>
+
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-html">Remote team management</span>
+						</li>
+
+						
+						<span class="percent" id="css-pourcent"></span>
+						<li>
+							<span class="progressbar progressblue" id="progress-css">Building Relationships</span>
+						</li>
+
+
+						<span class="percent" id="css-pourcent"></span>
+						<li>
+							<span class="progressbar progressblue" id="progress-css">CRM</span>
+						</li>
+
+						<span class="percent" id="javascript-pourcent"></span>
+						<li>
+							<span class="progressbar progresspurple" id="progress-javascript">Public Speaking and Presentation</span>
+						</li>
+
+					</ul>
+
+					<ul>
+						<h4>EXTRACURRICULAR AND FUN SKILLS</h4>
+						<br>
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-customer">Learning</span>
+						</li>
+
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-customer">Cooking</span>
+						</li>
+
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-customer">Meeting New People</span>
+						</li>
+
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-customer">Watching Scary Movies and Shows</span>
+						</li>
+
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-html">Biking</span>
+						</li>
+
+						<span class="percent" id="html-pourcent"></span>
+						<li>
+							<span class="progressbar progressred" id="progress-html">Traveling and Exploring</span>
+						</li>
+
+						<span class="percent" id="javascript-pourcent"></span>
+						<li>
+							<span class="progressbar progresspurple" id="progress-javascript">Yoga</span>
+						</li>
+
+						<span class="percent" id="php-pourcent"></span>
+						<li>
+							<span class="progressbar progressorange" id="progress-php">Dancing</span>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+</div>

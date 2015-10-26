@@ -21,6 +21,7 @@
 			url: '/experience',
 			templateUrl: 'templates/experience.html',
 		}).state('Skills',{
+			url: '/skills',
 			templateUrl: 'templates/skills.html',
 		}).state('Contact',{
 			url: '/contact',
