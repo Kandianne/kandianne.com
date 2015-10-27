@@ -294,6 +294,26 @@ md-input-container .md-placeholder, md-input-container label, md-input-container
     height: 100%;
   }
 
+
+  /*=================================WORK EXAMPLES=============================================*/
+  .workEx p {
+    width: 77%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    border: thin solid #200000;
+    margin-bottom: 30%;
+  }
+
+  .workEx img {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 6px #333;
+    margin-bottom: 1em;
+  }
+  /*==========================================================================================*/
+
   .welcomeRow .col-md-4 {
     border: thin solid #200000;
   }

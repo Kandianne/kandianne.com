@@ -28,6 +28,15 @@
 			templateUrl: 'templates/contact.html',
 		}).state('Portfolio',{
 			templateUrl: 'templates/portfolio.html',
+		}).state('ThinkNow',{
+			templateUrl: 'templates/thinkNow.html',
+		}).state('RegiKnow',{
+			url: '/regiKnow',
+			templateUrl: 'templates/regiKnow.html',
+		}).state('Kreations',{
+			templateUrl: 'templates/kreations.html',
+		}).state('IStressLess',{
+			templateUrl: 'templates/stressLess.html',
 		});
 		$urlRouterProvider.otherwise('/');
 	}
