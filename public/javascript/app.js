@@ -30,9 +30,9 @@
 			templateUrl: 'templates/portfolio.html',
 		}).state('ThinkNow',{
 			templateUrl: 'templates/thinkNow.html',
-		}).state('RegiKnow',{
-			url: '/regiKnow',
-			templateUrl: 'templates/regiKnow.html',
+		}).state('Projects',{
+			url: '/projects',
+			templateUrl: 'templates/projects.html',
 		}).state('Kreations',{
 			templateUrl: 'templates/kreations.html',
 		}).state('IStressLess',{
