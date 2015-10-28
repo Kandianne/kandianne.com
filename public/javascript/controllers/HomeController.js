@@ -22,7 +22,7 @@
     vm.type = {
       text: ""
     };
-    vm.rightString = "I'm Kandianne Pierre. A dog-loving, creativity driven, marketing-minded, adventurous, front-end web developer.";
+    vm.rightString = "I'm Kandianne Pierre. A dog-loving, creativity driven, bold, marketing-minded, adventurous, front-end web developer.";
     vm.wrongString = "Thanks for visiting!"
     vm.secondMessage = "Take a look at my work and send me a quick message to say hi :)";
 vm.secondType = [];
