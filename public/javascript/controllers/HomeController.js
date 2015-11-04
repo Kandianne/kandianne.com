@@ -3,11 +3,17 @@
   angular.module('app')
   .controller('HomeController', HomeController);
 
-  HomeController.$inject = ['$interval', "$state", "$timeout"];
+  HomeController.$inject = ['$interval', "$state", "$timeout", "$location", "$scope"];
 
-  function HomeController($interval, $state, $timeout) {
+  function HomeController($interval, $state, $timeout, $location, $scope) {
     var vm = this;
 
+    //----------------------ACTIVE CLASS---------------------------------------------------------------------------------------------------------
+    $scope.isCurrentPath = function (path) {
+      return $location.path() == path;
+      console.log(path);
+      console.log($location.path());
+    };
 
     //----------------------SKILLS---------------------------------------------------------------------------------------------------------
 

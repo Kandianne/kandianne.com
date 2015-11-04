@@ -5,6 +5,12 @@ body, html {
   font-family: 'Pontano Sans', sans-serif;
   color: #200000;
 }
+
+.active {
+  border: 1px solid #200000; 
+  border-radius: 3px;
+}
+
 .homeButton {
   float: right;
   font-size: 2em;
