@@ -18,10 +18,14 @@
     //----------------------SKILLS---------------------------------------------------------------------------------------------------------
 
     var x = angular.element(".story");
+    var y =  angular.element(".leftCircle"); 
 
     $timeout(function() {
       for(var i=0; i < x.length; i++) {
         x[i].className = 'puzzle';
+      }
+      for(var i=0; i < y.length; i++) {
+        y[i].className = 'puzzle';
       }
     },3300);
 

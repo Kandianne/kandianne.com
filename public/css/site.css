@@ -7,6 +7,9 @@ body, html {
 }
 
 /*============================================FOR WELCOME PUZZLE===============================================*/
+.slideInLeft, .slideInRight {
+  animation-duration: 3.6s;
+}
 
 .story {
   color: white;
@@ -19,6 +22,7 @@ body, html {
   color: #200000;
   background: white;
   padding: 0;
+  text-align: center;
 }
 
 .rightCircle {
@@ -40,6 +44,7 @@ body, html {
   left: -1.1em;
   top: 1.5em;
 }
+
 
 .active {
   border: 1px solid #200000; 
@@ -168,9 +173,7 @@ body, html {
   animation-duration: 2.6s;
 }
 
-.slideInLeft, .slideInRight {
-  animation-duration: 3.6s;
-}
+
 
 .contactKandi {
   padding: auto;
