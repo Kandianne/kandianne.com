@@ -6,6 +6,41 @@ body, html {
   color: #200000;
 }
 
+/*============================================FOR WELCOME PUZZLE===============================================*/
+
+.story {
+  color: white;
+  background: #200000;
+  border-radius: 7px;
+  padding: 1em 2em;
+}
+
+.puzzle {
+  color: #200000;
+  background: white;
+  padding: 0;
+}
+
+.rightCircle {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  right: -2em;
+  top: 1.5em;
+}
+
+.leftCircle {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background: #200000;
+  position: absolute;
+  left: -1.1em;
+  top: 1.5em;
+}
+
 .active {
   border: 1px solid #200000; 
   border-radius: 3px;
@@ -26,7 +61,6 @@ body, html {
 .row {
   margin-right: 0px;
   margin-left: 0px;
-  height: 100%;
 }
 
 .col-md-12 {
@@ -35,12 +69,16 @@ body, html {
 }
 
 #homepage {
-  background: url("../images/Kandianne-pierre.png") no-repeat fixed center center white;
-  background-size: cover;
+  /*background: url("../images/Kandianne-pierre.png") no-repeat fixed center center white;*/
+  /*background-size: cover;*/
   height: 100%;
+  padding: 3em;
+  font-size: 1.6em;
 }
 
-.typingText {
+
+
+/*.typingText {
   height: 460px;
   background: rgba(255, 255, 255, 0.79); 
   vertical-align: middle;
@@ -54,7 +92,7 @@ body, html {
   margin-bottom: 13%;
   border: solid thick #200000;
 }
-
+*/
 
 .links {
   margin:auto;
@@ -128,6 +166,10 @@ body, html {
 
 .animated {
   animation-duration: 2.6s;
+}
+
+.slideInLeft, .slideInRight {
+  animation-duration: 3.6s;
 }
 
 .contactKandi {
@@ -349,6 +391,10 @@ md-input-container .md-placeholder, md-input-container label, md-input-container
  *{
   margin: 0;
   padding: 0;
+}
+
+#homepage .main {
+  padding: 30% auto 10% auto;
 }
 
 .skills-bar-container ul {
