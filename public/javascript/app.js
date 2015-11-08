@@ -34,9 +34,8 @@
 			url: '/projects',
 			templateUrl: 'templates/projects.html',
 		}).state('Kreations',{
+			url: '/kreations',
 			templateUrl: 'templates/kreations.html',
-		}).state('IStressLess',{
-			templateUrl: 'templates/stressLess.html',
 		});
 		$urlRouterProvider.otherwise('/');
 	}
