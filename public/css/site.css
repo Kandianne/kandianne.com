@@ -73,12 +73,21 @@ body, html {
   padding-right: auto;
 }
 
+#me {
+  height: 30%;
+  background: url("../images/kandikoding.png") no-repeat center bottom white;
+  background-size: cover;
+  bottom: 0;
+}
+
 #homepage {
-  /*background: url("../images/Kandianne-pierre.png") no-repeat fixed center center white;*/
+  /*background: url("../images/kandikoding.png") no-repeat fixed center bottom white;
+  background-size: 70%;*/
   /*background-size: cover;*/
-  height: 100%;
+  /*height: 100%;*/
   padding: 3em;
   font-size: 1.6em;
+  background-color: rgba(255, 255, 255, 0.0);
 }
 
 
