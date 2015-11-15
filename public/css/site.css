@@ -6,8 +6,13 @@ body, html {
   color: #200000;
 }
 
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+
 /*============================================FOR WELCOME PUZZLE===============================================*/
-.slideInLeft, .slideInRight {
+/*.slideInLeft, .slideInRight {
   animation-duration: 3.6s;
 }
 
@@ -43,51 +48,60 @@ body, html {
   position: absolute;
   left: -1.1em;
   top: 1.5em;
-}
+  }*/
 
 
-.active {
-  border: 1px solid #200000; 
-  border-radius: 3px;
-}
+  .active {
+    border: 1px solid #200000; 
+    border-radius: 3px;
+  }
 
-.homeButton {
-  float: right;
-  font-size: 2em;
-  color: #200000;
-  position: fixed;
-  z-index: 999999;
-}
-.container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
-}
+  .homeButton {
+    float: right;
+    font-size: 2em;
+    color: #200000;
+    position: fixed;
+    z-index: 999999;
+  }
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 
-.row {
-  margin-right: 0px;
-  margin-left: 0px;
-}
+  .row {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 
-.col-md-12 {
-  padding-left: auto;
-  padding-right: auto;
-}
+  .col-md-12 {
+    padding-left: auto;
+    padding-right: auto;
+  }
 
-#aboutMe {
-  background:rgba(32, 0, 0, 0.9);
-  color: white;
-  padding: 1.6em;
-  margin-top: 6%;
-}
+  #aboutMe {
+    background:rgba(32, 0, 0, 0.9);
+    color: white;
+    padding: 1.6em;
+    margin-top: 6%;
+    text-align: center;
+  }
 
-#homepage {
-  background: url("../images/kandikoding.png") no-repeat fixed center bottom white;
-  background-size: cover;
-  height: 100%;
-  padding: 3em;
-  font-size: 1.6em;
-  background-color: rgba(255, 255, 255, 0.0);
-}
+  #aboutMe a {
+    color: white;
+    font-size: 1.3em;
+    padding-left: 9%;
+    padding-right: 9%;
+    text-align: center;
+  }
+
+  #homepage {
+    background: url("../images/kandikoding.png") no-repeat fixed center bottom white;
+    background-size: cover;
+    height: 100%;
+    padding: 3em;
+    font-size: 1.6em;
+    background-color: rgba(255, 255, 255, 0.0);
+  }
 
 
 
@@ -561,16 +575,25 @@ md-input-container .md-placeholder, md-input-container label, md-input-container
 }
 }
 
+
+
+*/
+
+@media only screen and (max-width : 360px) {
+
+}
+
+
 @media only screen and (max-width : 480px) {
- .welcomeRow div {
-  padding-bottom: 9%;
-  padding-top: 9%;
-}
+  #homepage {
+
+  }
 }
 
-@media only screen and (max-width : 320px) {
 
-  }*/
+
+
+
 
 
 

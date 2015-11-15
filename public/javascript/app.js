@@ -28,8 +28,9 @@
 			templateUrl: 'templates/contact.html',
 		}).state('Portfolio',{
 			templateUrl: 'templates/portfolio.html',
-		}).state('ThinkNow',{
-			templateUrl: 'templates/thinkNow.html',
+		}).state('Resume',{
+			url: '/resume',
+			templateUrl: 'templates/resume.html',
 		}).state('Projects',{
 			url: '/projects',
 			templateUrl: 'templates/projects.html',
