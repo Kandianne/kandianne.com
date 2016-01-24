@@ -11,6 +11,21 @@ iframe {
   height: 100vh;
 }
 
+.primaryTile {
+  background: #200000;
+  color: white;
+}
+
+#intro {
+  width: 39%;
+  position: absolute;
+  right: 3%;
+}
+
+p {
+  margin: 2em;
+}
+
 /*============================================FOR WELCOME PUZZLE===============================================*/
 /*.slideInLeft, .slideInRight {
   animation-duration: 3.6s;
@@ -86,7 +101,7 @@ iframe {
     text-align: center;
   }
 
-  #aboutMe a {
+  #aboutMe a, #homepage a {
     color: white;
     font-size: 1.3em;
     padding-left: 9%;
