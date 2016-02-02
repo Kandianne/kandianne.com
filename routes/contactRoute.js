@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var env = require('../env.js');
+// var env = require('../env.js');
 var nodemailer = require('nodemailer');
 
 
