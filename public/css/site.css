@@ -17,10 +17,16 @@ iframe {
 }
 
 #intro {
-  width: 39%;
+  width: 490px;
   position: absolute;
   right: 3%;
+  padding-bottom: 0 !important;
 }
+
+#summary md-grid-tile figure {
+  height: 100%;
+}
+
 
 p {
   margin: 2em;
@@ -118,6 +124,9 @@ p {
     background-color: rgba(255, 255, 255, 0.0);
   }
 
+  #homepage i {
+    text-align: center;
+  }
 
 
 /*.typingText {
@@ -566,44 +575,37 @@ md-input-container .md-placeholder, md-input-container label, md-input-container
 
 
 /*=====================================================
-=            Bootstrap 2.3.2 Media Queries            =
+=            Media Queries            =
 =====================================================*/
-/*@media only screen and (max-width : 1200px) {
-  .welcomeRow div {
-    padding-bottom: 39%;
-    padding-top: 39%;
 
+
+@media only screen and (max-width : 839px) {
+/*  #intro {
+    width: 370px;
+    position: relative;
+    right: auto;
+    margin: auto;
+    padding:7em 0;
   }
-}
-
-@media only screen and (max-width : 979px) {
-  .welcomeRow div {
-    padding-bottom: 33%;
-    padding-top: 33%;
-  }
-}
-
-@media only screen and (max-width : 767px) {
- .welcomeRow div {
-  padding-bottom: 16%;
-  padding-top: 16%;
-}
-}
-
-
-
-*/
-
-@media only screen and (max-width : 360px) {
-
-}
-
-
-@media only screen and (max-width : 480px) {
   #homepage {
-
+    padding:0;
+    margin: auto;
   }
+  #summary {
+    font-size: 79%;
+  }*/
 }
+
+@media only screen and (max-width : 397px) {
+/*  #intro {
+    width: 300px;
+   }*/
+ }
+
+
+
+
+
 
 
 

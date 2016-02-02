@@ -8,8 +8,8 @@
 
 		//===================TOAST POSITIONING===============================================	
 		$scope.toastPosition = {
-			bottom: false,
-			top: true,
+			bottom: true,
+			top: false,
 			left: false,
 			right: true
 		};
@@ -22,8 +22,6 @@
 		};
 
 		//===================SEND MAIL FUNCTIONALITY===============================================	
-
-
 
 		vm.sendMail = function() {
 

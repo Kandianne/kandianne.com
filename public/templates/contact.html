@@ -13,33 +13,29 @@
   <div class="row">
 
     <div class="col-md-12 contact">
-
-
-
       <form name="contactForm" data-ng-submit="cf.sendMail()">
         <h1 class="text-center">Let's keep in touch!</h1>
         <div>
           <p class="text-center">kandipierre@gmail.com - 818.470.9438 - Oakland, CA</p>
         </div>
         <md-input-container flex class="animated pulse infinite">
-        <label>How can I help you?...</label>
-        <textarea   data-ng-model="cf.contactMessage" required></textarea>
-      </md-input-container>
+          <label>How can I help you?...</label>
+          <textarea   data-ng-model="cf.contactMessage" required></textarea>
+        </md-input-container>
 
-      <md-input-container flex>
-      <label>Your name...</label>
-      <input data-ng-model="cf.contactName" required>
-    </md-input-container>
+        <md-input-container flex>
+          <label>Your name...</label>
+          <input data-ng-model="cf.contactName" required>
+        </md-input-container>
 
-    <md-input-container flex>
-    <label>Your email...</label>
-    <input  data-ng-model="cf.contactEmail" required>
-  </md-input-container>
+        <md-input-container flex>
+          <label>Your email...</label>
+          <input  data-ng-model="cf.contactEmail" required>
+        </md-input-container>
 
-  <div class="col-md-12 message text-center">
-    <md-button class="md-button-ripple md-raised md-button msgButton" type="submit">Send Message</md-button>
-    
-  </div>
+        <div class="col-md-12 message text-center">
+          <md-button class="md-button-ripple md-raised md-button msgButton" type="submit">Send Message</md-button>
+        </div>
   <br>
 
 </form>

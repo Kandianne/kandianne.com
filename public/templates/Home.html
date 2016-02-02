@@ -13,7 +13,7 @@
 
 <div ng-controller="HomeController as vm" class="container-fluid" id="homepage">
 
-<md-grid-list id="intro" md-cols-xs="1" md-cols-sm="2" md-cols-md="2" md-cols-gt-md="3" md-row-height-gt-md="3:2" md-row-height="3:6" md-gutter="12px" md-gutter-gt-md="8px" md-gutter-gt-sm="7px">
+<md-grid-list id="intro" md-cols-xs="3" md-cols-sm="3" md-cols-md="3" md-cols-gt-md="3" md-row-height-gt-md="3:2" md-row-height="1:2" md-gutter="12px" md-gutter-gt-md="8px" md-gutter-gt-sm="7px">
 
 		<md-grid-tile md-rowspan="1" md-colspan="1" class="primaryTile">
 			<a href="https://www.linkedin.com/in/kandianne" target="_blank">
@@ -22,22 +22,32 @@
 		</md-grid-tile>
 
 	  	<md-grid-tile md-rowspan="1" md-colspan="1" class="primaryTile">
-	  		<i class="fa fa-github animated pulse infinite"></i>
+	  		<a href="https://github.com/Kandianne" target="_blank">
+	  			<i class="fa fa-github animated pulse infinite"></i>
+	  		</a>
 	  	</md-grid-tile>
 	  	<md-grid-tile md-rowspan="1" md-colspan="1" class="primaryTile">
-	  		<i class="fa fa-file-text"></i>
+	  		<a ui-sref="Contact">
+	  			<i class="fa fa-envelope animated pulse infinite"></i>
+	  		</a>	
 	  	</md-grid-tile>
 	  	<md-grid-tile md-rowspan="1" md-colspan="1" class="primaryTile">
-	  		<i class="fa fa-envelope"></i>
+	  		<a ui-sref="Projects">
+	  			<i class="fa fa-cog animated pulse infinite"></i>
+	  		</a>
 	  	</md-grid-tile>
 	  	<md-grid-tile md-rowspan="1" md-colspan="1" class="primaryTile">
-	  		<i class="fa fa-twitter"></i>
+	  		<a href="https://twitter.com/KandiPierre" target="_blank">
+	  			<i class="fa fa-twitter animated pulse infinite"></i>
+	  		</a>
 	  	</md-grid-tile>
 	  	<md-grid-tile md-rowspan="1" md-colspan="1" class="primaryTile">
-	  		<i class="fa fa-twitter"></i>
-	  	</md-grid-tile id="summary">
-	  		  	<md-grid-tile md-rowspan="3" md-colspan="3" class="primaryTile">
-	  		<p>I enjoy contributing to and kreating projects that solve problems. Feel free to explore my site and send me a message to keep in touch.</p>
+	  		<a ng-href="http://codepen.io/Kandianne/" target="_blank">
+	  			<i class="fa fa-codepen animated pulse infinite"></i>
+	  		</a>
+	  	</md-grid-tile>
+	  	<md-grid-tile md-rowspan="4" md-colspan="3" class="primaryTile"  id="summary">
+	  		<p ui-sref="Contact">I enjoy contributing to and kreating projects that solve problems. I am a courageous, marketing-minded, adventurous web developer. Click here to send me a message and keep in touch.</p>
 	  	</md-grid-tile>
 
 </md-grid-list>
