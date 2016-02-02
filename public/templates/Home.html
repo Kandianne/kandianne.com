@@ -13,8 +13,7 @@
 
 <div ng-controller="HomeController as vm" class="container-fluid" id="homepage">
 
-<md-grid-list id="intro" md-cols-xs="3" md-cols-sm="3" md-cols-md="3" md-cols-gt-md="3" md-row-height-gt-md="3:2" md-row-height="1:2" md-gutter="12px" md-gutter-gt-md="8px" md-gutter-gt-sm="7px">
-
+<!-- <md-grid-list id="intro" md-cols-xs="3" md-cols-sm="3" md-cols-md="3" md-cols-gt-md="3" md-row-height-gt-md="3:2" md-row-height="1:2" md-gutter="12px" md-gutter-gt-md="8px" md-gutter-gt-sm="7px">
 		<md-grid-tile md-rowspan="1" md-colspan="1" class="primaryTile">
 			<a href="https://www.linkedin.com/in/kandianne" target="_blank">
 				<i class="fa fa-linkedin animated pulse infinite"></i>
@@ -47,10 +46,52 @@
 	  		</a>
 	  	</md-grid-tile>
 	  	<md-grid-tile md-rowspan="4" md-colspan="3" class="primaryTile"  id="summary">
-	  		<p ui-sref="Contact">I enjoy contributing to and kreating projects that solve problems. I am a courageous, marketing-minded, adventurous web developer. Click here to send me a message and keep in touch.</p>
+	  		<p ui-sref="Contact">
+	  			I enjoy contributing to and kreating projects that solve problems. I am a courageous, marketing-minded, adventurous web developer. Click here to send me a message and keep in touch.
+	  		</p>
 	  	</md-grid-tile>
+</md-grid-list> -->
 
-</md-grid-list>
+<ul id="intro">
+		<li class="primaryTile">
+			<a href="https://www.linkedin.com/in/kandianne" target="_blank">
+				<i class="fa fa-linkedin animated pulse infinite"></i>
+			</a>	
+		</li>
+
+	  	<li class="primaryTile">
+	  		<a href="https://github.com/Kandianne" target="_blank">
+	  			<i class="fa fa-github animated pulse infinite"></i>
+	  		</a>
+	  	</li>
+	  	<li class="primaryTile">
+	  		<a ui-sref="Contact">
+	  			<i class="fa fa-envelope animated pulse infinite"></i>
+	  		</a>	
+	  	</li>
+	  	<li class="primaryTile">
+	  		<a ui-sref="Projects">
+	  			<i class="fa fa-cog animated pulse infinite"></i>
+	  		</a>
+	  	</li>
+	  	<li class="primaryTile">
+	  		<a href="https://twitter.com/KandiPierre" target="_blank">
+	  			<i class="fa fa-twitter animated pulse infinite"></i>
+	  		</a>
+	  	</li>
+	  	<li class="primaryTile">
+	  		<a ng-href="http://codepen.io/Kandianne/" target="_blank">
+	  			<i class="fa fa-codepen animated pulse infinite"></i>
+	  		</a>
+	  	</li>
+	  	<li class="primaryTile" id="summary">
+	  		<p ui-sref="Contact">
+	  			Hi, I'm Kandianne. I enjoy contributing to and kreating projects that solve problems. I am a courageous, marketing-minded, adventurous web developer. Click here to get in touch.
+	  		</p>
+	  	</li>
+</ul>
+
+
 	
 <!-- 	<div class="main">
 		<div class="row col-xs-12 col-sm-12 col-md-12">

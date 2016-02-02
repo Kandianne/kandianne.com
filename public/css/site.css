@@ -11,27 +11,51 @@ iframe {
   height: 100vh;
 }
 
-.primaryTile {
-  background: #200000;
-  color: white;
-}
-
-#intro {
-  width: 490px;
-  position: absolute;
-  right: 3%;
-  padding-bottom: 0 !important;
-}
-
-#summary md-grid-tile figure {
-  height: 100%;
-}
-
-
 p {
   margin: 2em;
 }
 
+/*============================================HOME INFO===============================================*/
+
+#intro {
+  padding: 0;
+  margin: auto -30px;
+  width: 600px;
+  right: 70px;
+  position: absolute;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#intro li {
+  background: #200000;
+  padding: 4.5px;
+  width: 30%;
+  height: 100%;
+  margin-top: 9px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+}
+
+#summary {
+  padding: 3px !important;
+  width: 100% !important;
+  height: 100%;
+  font-size: 97%;
+}
+
+#summary p {
+  line-height: normal;
+}
 /*============================================FOR WELCOME PUZZLE===============================================*/
 /*.slideInLeft, .slideInRight {
   animation-duration: 3.6s;
@@ -77,13 +101,15 @@ p {
     border-radius: 3px;
   }
 
-  .homeButton {
+  #homeButton {
     float: right;
     font-size: 2em;
     color: #200000;
+    background: rgba(255, 255, 255, 0.6);
     position: fixed;
     z-index: 999999;
   }
+
   .container-fluid {
     padding-right: 0px;
     padding-left: 0px;
@@ -409,7 +435,7 @@ md-input-container .md-placeholder, md-input-container label, md-input-container
     margin-right: auto;
     padding: 2em;
     border: thin solid #200000;
-    margin-bottom: 3%;
+    margin-bottom: 13%;
   }
 
   .workEx img {
@@ -427,6 +453,7 @@ md-input-container .md-placeholder, md-input-container label, md-input-container
 
   .skillRow{
     padding-bottom: 13%;
+    margin-bottom: 9%;
   }
 
   #skillsQ {
@@ -579,28 +606,26 @@ md-input-container .md-placeholder, md-input-container label, md-input-container
 =====================================================*/
 
 
-@media only screen and (max-width : 839px) {
-/*  #intro {
-    width: 370px;
-    position: relative;
-    right: auto;
-    margin: auto;
-    padding:7em 0;
-  }
-  #homepage {
-    padding:0;
-    margin: auto;
-  }
+@media only screen and (max-width : 670px) {
   #summary {
-    font-size: 79%;
-  }*/
+    padding: 0px !important;
+    font-size: 87% !important;
+  }
+
+  #intro {
+    margin: -63px -50px 19px -50px;
+    width: 100%;
+    right: inherit;
+    left: 50px;
+  }
+
+  #intro li {
+    line-height: 70px;
+  }
+
 }
 
-@media only screen and (max-width : 397px) {
-/*  #intro {
-    width: 300px;
-   }*/
- }
+
 
 
 
