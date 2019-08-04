@@ -36,7 +36,7 @@ p {
 #intro li {
   background: #200000;
   padding: 4.5px;
-  width: 30%;
+  width: 48%;
   height: 100%;
   margin-top: 9px;
   line-height: 150px;
@@ -55,6 +55,7 @@ p {
 
 #summary p {
   line-height: normal;
+  margin: 7.5em 2em;
 }
 /*============================================FOR WELCOME PUZZLE===============================================*/
 /*.slideInLeft, .slideInRight {
